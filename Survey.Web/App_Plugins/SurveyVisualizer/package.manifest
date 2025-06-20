@@ -7,7 +7,8 @@
       "icon": "icon-rocket",
       "view": "~/App_Plugins/SurveyVisualizer/Html/survey-visualizer.html",
       "show": [
-          "+content/survey"
+          "+content/survey",
+          "+content/dynamicSurvey"
       ]
     }
   ],
