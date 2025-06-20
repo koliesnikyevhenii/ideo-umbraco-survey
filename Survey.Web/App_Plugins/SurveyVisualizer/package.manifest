@@ -1,0 +1,17 @@
+{
+  "contentApps": [
+    {
+      "name": "Survey Visualizer",
+      "alias": "surveyVisualizer",
+      "weight": 101,
+      "icon": "icon-rocket",
+      "view": "~/App_Plugins/SurveyVisualizer/Html/survey-visualizer.html",
+      "show": [
+          "+content/survey"
+      ]
+    }
+  ],
+  "javascript": [
+    "/App_Plugins/SurveyVisualizer/Js/survey-visualizer.controller.js"
+  ]
+}

@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\SurveyVisualizer\Html\survey-visualizer.html" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="10.8.10" />
@@ -15,6 +18,13 @@
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
     <PackageReference Include="uSync" Version="10.7.3" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App_Plugins\SurveyVisualizer\Images\MeaslesDiagram.svg" />
+    <None Include="App_Plugins\SurveyVisualizer\Images\ProfessionAdvisor.svg" />
+    <None Include="App_Plugins\SurveyVisualizer\Js\survey-visualizer.controller.js" />
+    <None Include="App_Plugins\SurveyVisualizer\package.manifest" />
   </ItemGroup>
 
   <PropertyGroup>
